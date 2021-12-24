@@ -7,6 +7,7 @@ import Create from "../views/Create.vue";
 import ViewWorkout from "../views/ViewWorkout.vue";
 import WorkoutList from "../views/Workout-List.vue";
 
+
 const routes = [
   {
     path: "/",
@@ -59,9 +60,10 @@ const routes = [
     component: ViewWorkout,
     meta: {
       title: "View Workout",
-      auth: false,
+      auth: true,
     },
   },
+
 ];
 
 const router = createRouter({
